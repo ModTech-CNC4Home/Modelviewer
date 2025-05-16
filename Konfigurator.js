@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <title>Konfigurator</title>
   <style>
     body {
       font-family: Arial, sans-serif;
