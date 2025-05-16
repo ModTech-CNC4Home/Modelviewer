@@ -176,6 +176,7 @@
         select.addEventListener("change", () => {
         aktualisiereBilder();
         berechnePreis();
+		console.log("Gefundene Select-Elemente:", document.querySelectorAll("select").length);
         });
       });
 
@@ -183,6 +184,7 @@ document.addEventListener("change", function (event) {
   if (event.target && event.target.id === "deineAuswahl") {
     aktualisiereBilder();
 berechnePreis();
+	  console.log("Gefundene Select-Elemente:", document.querySelectorAll("select").length);
   }
 });
 	    
