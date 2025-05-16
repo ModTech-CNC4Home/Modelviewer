@@ -179,6 +179,13 @@
         });
       });
 
+document.addEventListener("change", function (event) {
+  if (event.target && event.target.id === "deineAuswahl") {
+    aktualisiereBilder();
+berechnePreis();
+  }
+});
+	    
       document.getElementById("Downloadbutton").addEventListener("click", downloadStueckliste);
     });
   function downloadStueckliste() {
