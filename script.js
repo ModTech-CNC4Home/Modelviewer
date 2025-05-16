@@ -40,6 +40,10 @@
 
     // Preisberechnung
     function berechnePreis() {
+
+	    alert("Berechne Preis aufgerufen");
+
+	    
       const laenge = parseInt(document.getElementById("länge").value);
       const breite = parseInt(document.getElementById("breite").value);
 
@@ -103,6 +107,8 @@
       const AntriebBild = document.getElementById("AntriebBild");
       const MotorBild = document.getElementById("MotorBild");
 
+	alert("Bilder aktualisieren aufgerufen");
+	    
       // XY-Achse Definition
       XY_Achse.src = githubBaseUrl + "XY_Achse.png";
       XY_Achse.style.display = "block";
