@@ -98,7 +98,6 @@
       const absaugung = document.getElementById("Absaugung").value;
       const antrieb = document.getElementById("Antrieb").value;
       const motor = document.getElementById("Motor").value;
-
       const XY_Achse = document.getElementById("XY_Achse");
       const SpindelBild = document.getElementById("SpindelBild");
       const SteuerungBild = document.getElementById("SteuerungBild");
@@ -106,8 +105,6 @@
       const AbsaugungBild = document.getElementById("AbsaugungBild");
       const AntriebBild = document.getElementById("AntriebBild");
       const MotorBild = document.getElementById("MotorBild");
-
-	alert("Bilder aktualisieren aufgerufen");
 	    
       // XY-Achse Definition
       XY_Achse.src = githubBaseUrl + "XY_Achse.png";
@@ -432,6 +429,9 @@ berechnePreis();
 }
 
 
+berechnePreis();
+aktualisiereBilder();
+
 document.querySelectorAll("select").forEach(select => {
   select.addEventListener("change", () => {
     aktualisiereBilder();
@@ -439,7 +439,5 @@ document.querySelectorAll("select").forEach(select => {
   });
 });
 
+document.getElementById("Downloadbutton").addEventListener("click", downloadStueckliste);
 
-  aktualisiereBilder();
-  berechnePreis();
-   document.getElementById("Downloadbutton").addEventListener("click", downloadStueckliste);
