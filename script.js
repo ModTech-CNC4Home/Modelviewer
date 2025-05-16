@@ -39,11 +39,7 @@
     }
 
     // Preisberechnung
-    function berechnePreis() {
-
-	    alert("Berechne Preis aufgerufen");
-
-	    
+    function berechnePreis() {    
       const laenge = parseInt(document.getElementById("länge").value);
       const breite = parseInt(document.getElementById("breite").value);
 
