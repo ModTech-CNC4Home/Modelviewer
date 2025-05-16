@@ -431,6 +431,15 @@ berechnePreis();
   }
 }
 
+
+document.querySelectorAll("select").forEach(select => {
+  select.addEventListener("change", () => {
+    aktualisiereBilder();
+    berechnePreis();
+  });
+});
+
+
   aktualisiereBilder();
   berechnePreis();
    document.getElementById("Downloadbutton").addEventListener("click", downloadStueckliste);
