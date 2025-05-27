@@ -50,7 +50,7 @@
       const steuerungPreis = steuerungWert === "Schaltschrank" ? 1000 : 0;
 
       const motorWert = document.getElementById("Motor").value;
-      const motorPreis = motorWert === "Servomotor" ? 425 : motorWert === "Closed-Loop Schrittmotor" ? 475 : 0;
+      const motorPreis = motorWert === "Servomotor" ? 475 : motorWert === "Closed-Loop Schrittmotor" ? 425 : 0;
 
       const vakuumplatteWert = document.getElementById("Vakuumplatte").value;
       const vakuumplattePreis = vakuumplatteWert === "Ja" ? 50 : 0;
@@ -216,9 +216,9 @@ berechnePreis();
     // Definition der Gruppen, die später in die CSV übernommen werden
     const gruppen = {
       linearfuehrung: [
-        ["CNC-Portal", "Linearfürhung", "001", "KUGELSCHIENE_CS_KSE_020_SNS_H", "2", "Länge: 300mm"],
-        ["CNC-Portal", "Linearfürhung", "002", "KUGELSCHIENE_CS_KSE_025_SNS_H_", "2", "Länge: " + (breite + 200)],
-        ["CNC-Portal", "Linearfürhung", "003", "KUGELSCHIENE_CS_KSE_025_SNS_H_", "2", "Länge: " + (laenge + 200)],
+        ["CNC-Portal", "Linearfürhung", "001", "KUGELSCHIENE_CS_KSE_020_SNS_H", "2", "(S) Länge: 300mm"],
+        ["CNC-Portal", "Linearfürhung", "002", "KUGELSCHIENE_CS_KSE_025_SNS_H_", "2", "(M) Länge: " + (breite + 200)],
+        ["CNC-Portal", "Linearfürhung", "003", "KUGELSCHIENE_CS_KSE_025_SNS_H_", "2", "(L) Länge: " + (laenge + 200)],
         ["CNC-Portal", "Linearfürhung", "004", "KWE_020_SNS_CS_C1_H", "4", ""],
         ["CNC-Portal", "Linearfürhung", "005", "KWE_025_SNS_CS_C1_H", "8", ""]
       ],
@@ -250,12 +250,12 @@ berechnePreis();
 		["CNC-Portal", "Verschraubung", "030", "Ramp-Muffe M8x20", "15", ""]
 		],
       aluprofil: [
-		["CNC-Portal", "Alu-Profil", "031", "Aluprofil 40x40", "6", "Länge: 80mm"],
-		["CNC-Portal", "Alu-Profil", "032", "Aluprofil 40x40", "3", "Länge: " + (laenge + 202)],
-		["CNC-Portal", "Alu-Profil", "033", "Aluprofil 40x40", "2", "Länge: " + (laenge + 202)],
-		["CNC-Portal", "Alu-Profil", "034", "Aluprofil 40x40", "2", "Länge: " + (breite + 451.5)],
-		["CNC-Portal", "Alu-Profil", "035", "Aluprofil 80x40", "2", "Länge: " + (laenge + 202)],
-		["CNC-Portal", "Alu-Profil", "036", "Aluprofil 80x40", "2", "Länge: " + (breite + 451.5)],
+		["CNC-Portal", "Alu-Profil", "031", "Aluprofil 40x40", "6", "(XS) Länge: 80mm"],
+		["CNC-Portal", "Alu-Profil", "032", "Aluprofil 40x40", "3", "(S) Länge: " + (laenge + 202)],
+		["CNC-Portal", "Alu-Profil", "033", "Aluprofil 40x40", "2", "(M) Länge: " + (laenge + 202)],
+		["CNC-Portal", "Alu-Profil", "034", "Aluprofil 40x40", "2", "(L) Länge: " + (breite + 451.5)],
+		["CNC-Portal", "Alu-Profil", "035", "Aluprofil 80x40", "2", "(S) Länge: " + (laenge + 202)],
+		["CNC-Portal", "Alu-Profil", "036", "Aluprofil 80x40", "2", "(L) Länge: " + (breite + 451.5)],
 		["CNC-Portal", "Alu-Profil", "037", "Endkappe 40x40 S", "4",""],
 		["CNC-Portal", "Alu-Profil", "038", "Nutenstein M6", "100", ""],
 		["CNC-Portal", "Alu-Profil", "039", "Nutenstein M8", "110", ""],
